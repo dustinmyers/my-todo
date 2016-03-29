@@ -1,0 +1,27 @@
+{
+  "name": "my-todo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "karma start --single-run",
+    "start": "node server.js"
+  },
+  "author": "Dustin Myers",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "cors": "^2.7.1",
+    "express": "^4.13.4",
+    "express-session": "^1.13.0",
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "mongodb": "^2.1.13",
+    "mongoose": "^4.4.10"
+  },
+  "devDependencies": {
+    "jasmine-core": "^2.4.1",
+    "karma-chrome-launcher": "^0.2.3",
+    "karma-jasmine": "^0.3.8"
+  }
+}
