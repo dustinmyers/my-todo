@@ -1,0 +1,28 @@
+<div class="login-wrapper">
+    <md-whiteframe class="md-whiteframe-1dp login" flex-sm="45" layout="column" layout-align="center center">
+        <div class="form-wrapper" layout-align="space-between center">
+            <h3>Welcome to Checkster</h3>
+            <md-input-container class="md-block">
+                <label>Email</label>
+                <input required type="email" ng-model="user.email">
+                <div ng-messages="loginForm.userEmail.$error">
+                    <div ng-message-exp="['required', 'pattern']">
+                        Your email must look like an e-mail address.
+                    </div>
+                </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+                <label>Password</label>
+                <input required type="password" ng-model="user.password"
+                       minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+                <div ng-messages="projectForm.password.$error" role="alert">
+                    <div ng-message="required">This is required.</div>
+                </div>
+            </md-input-container>
+            <div class="btn-row" layout="row" layout-align="space-between end">
+                <a href="#" ng-click="openRegisterUserModal()" class="register-link">New to Checkster? Register here.</a>
+                <md-button class="md-raised md-accent " ng-click="login(user)">Login</md-button>
+            </div>
+        </div>
+    </md-whiteframe>
+</div>

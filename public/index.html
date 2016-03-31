@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Todo</title>
+    <base href="/"/>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="/bower_components/angular-material/angular-material.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body ng-app="myTodo">
+
+<ui-view></ui-view>
+
+<!--Dependencies-->
+<script src="bower_components/angular/angular.js"></script>
+<script src="/bower_components/angular-aria/angular-aria.js"></script>
+<script src="/bower_components/angular-animate/angular-animate.js"></script>
+<script src="/bower_components/angular-material/angular-material.js"></script>
+<script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
+<!--app-->
+<script src="scripts/app.js"></script>
+<script src="scripts/router.js"></script>
+<!--controllers-->
+<script src="scripts/controllers/LoginCtrl.js"></script>
+<script src="scripts/controllers/ListCtrl.js"></script>
+<!--directives-->
+<!--<script src="scripts/directives/pageDirective.js"></script>-->
+<!--services-->
+<script src="scripts/services/authService.js"></script>
+
+
+</body>
+</html>

@@ -1,11 +1,10 @@
 (function() {
     "use strict";
 
-    function ListCtrl() {
+    function LoginCtrl() {
         var $ctrl = this;
 
-        console.log("ctrl here");
-        $ctrl.test = "hey there boi!";
+
 
     }//end controller
 
@@ -13,6 +12,6 @@
 
     angular
         .module("myTodo")
-        .controller("ListCtrl", ListCtrl);
+        .controller("LoginCtrl", LoginCtrl)
 
 })();
